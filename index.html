@@ -86,20 +86,31 @@
          white-space: nowrap; 
 
     }
-
     @media (max-width: 768px) {
 
+    /* キャッチコピーの不自然な改行を防ぐ */
     .catch-copy {
         white-space: normal;
         font-size: 22px;
         line-height: 1.4;
     }
 
+    /* 会社概要を1列にして読みやすく */
+    .company-info {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .company-info dt {
+        margin-top: 10px;
+    }
+
+    /* 画像の高さを自動にして崩れ防止 */
     .work-item img {
         height: auto;
     }
-
-    .company-info {
+}
+     .company-info {
         grid-template-columns: 1fr;
         row-gap: 10px;
    }
