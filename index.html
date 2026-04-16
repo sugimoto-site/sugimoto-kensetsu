@@ -90,7 +90,7 @@
     @media (max-width: 768px) {
 
     .catch-copy {
-        white-space: nowrap;
+        white-space: normal;
         font-size: 22px;
         line-height: 1.4;
     }
@@ -101,8 +101,16 @@
 
     .company-info {
         grid-template-columns: 1fr;
+        row-gap: 10px;
+   }
+      
+    .l.company-info dt {
+        font-weight: bold;
+        margin-top: 10px;
     }
-    .lightbox {
+    }
+
+ightbox {
         display: none;
         position: fixed;
         z-index: 9999;
