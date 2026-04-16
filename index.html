@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
    <style>
+        <style>
     body {
         background: #f5f5f7;
         font-family: sans-serif;
@@ -20,67 +21,139 @@
         background-size: cover;
         background-position: center;
         color: #fff;
-        padding: 40px;
+        padding: 80px 40px 40px;
         text-align: center;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         overflow: hidden;
-        padding-top: 80px;
-
     }
-        .intro {
-            font-weight: 600;
-            /* 少し太く */
-            font-size: 1.05rem;
-            /* ほんの少し大きく */
-        }
 
-        .company-info {
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            row-gap: 4px;
-            font-size: 0.95rem;
-        }
+    .intro {
+        font-weight: 600;
+        font-size: 1.05rem;
+    }
 
-        .company-info dt {
-            font-weight: bold;
-        }
+    .company-info {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        row-gap: 4px;
+        font-size: 0.95rem;
+    }
 
-        .company-info dd {
-            margin: 0;
-        }
+    .company-info dt {
+        font-weight: bold;
+    }
 
-        section {
-            margin: 60px 0;
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+    .company-info dd {
+        margin: 0;
+    }
 
-        h2 {
-            font-size: 28px;
-            border-left: 6px solid #0078D7;
-            padding-left: 10px;
-            margin-bottom: 20px;
-        }
+    section {
+        margin: 60px auto;
+        padding: 40px 20px;
+        max-width: 900px;
+    }
 
-        /* 実績ギャラリー */
+    h2 {
+        font-size: 28px;
+        border-left: 6px solid #0078D7;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .work-item {
+        width: calc(33% - 20px);
+        background: #f9f9f9;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .work-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .catch-copy {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
         .works {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            display: block;
         }
 
         .work-item {
-            width: calc(33% - 20px);
-            background: #f9f9f9;
-            padding: 10px;
-            box-sizing: border-box;
+            width: 100%;
         }
 
-        .work-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .catch-copy {
+            font-size: 24px;
+        }
+    }
+
+    .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        animation: fadein 0.2s;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        background: #eee;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+</style>
+
+
+       
+         object-fit: cover;
 
         }
 
