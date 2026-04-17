@@ -278,7 +278,6 @@ footer {
     <img src="" class="popup-image">
 </div>
 
-<!-- popup を動かす JS はここ -->
 <script>
     const popup = document.getElementById('popup');
     const popupImage = document.querySelector('.popup-image');
@@ -293,12 +292,8 @@ footer {
     popup.addEventListener('click', () => {
         popup.style.display = 'none';
     });
+</script><!-- popup を動かす JS はここ -->
 
- });
-    popup.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-</script>
        <!-- クリック後に表示される拡大画像の枠 -->
   <div id="popup" class="popup">
     <img src="" class="popup-image">
