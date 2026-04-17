@@ -270,11 +270,16 @@ footer {
 
     </section>
 
-    <!-- 拡大画像 -->
-    <div id="lightbox" class="lightbox">
-        <img id="lightbox-img" src="">
-    </div>
-    <script>
+    <<!-- 一覧画像たち -->
+<div class="works">…</div>
+
+<!-- popup（拡大画像） -->
+<div id="popup" class="popup">
+    <img src="" class="popup-image">
+</div>
+
+<!-- popup を動かす JS はここ -->
+<script>
     const popup = document.getElementById('popup');
     const popupImage = document.querySelector('.popup-image');
 
@@ -285,6 +290,11 @@ footer {
         });
     });
 
+    popup.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+ });
     popup.addEventListener('click', () => {
         popup.style.display = 'none';
     });
