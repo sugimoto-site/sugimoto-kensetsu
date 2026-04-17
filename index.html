@@ -245,8 +245,7 @@ footer {
 
     <section>
         <h2>最近の工事実績</h2>
-
-       <div class="works">
+      <div class="works">
     <div class="work-item">
         <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" class="zoom-img">
         <h3>建築工事｜男鹿市</h3>
@@ -266,10 +265,12 @@ footer {
     </div>
 </div>
 
+<!-- 拡大画像の枠（1つだけ） -->
 <div id="popup" class="popup">
     <img src="" class="popup-image">
 </div>
 
+<!-- popup を動かす script（必ず popup の後に置く） -->
 <script>
     const popup = document.getElementById('popup');
     const popupImage = document.querySelector('.popup-image');
@@ -284,13 +285,8 @@ footer {
     popup.addEventListener('click', () => {
         popup.style.display = 'none';
     });
-</script> 
-
+</script>
       
-  <div id="popup" class="popup">
-    <img src="" class="popup-image">
-   </div>
-
     <section>
         <h2>お問い合わせ</h2>
         <p>ご相談・お見積りは無料です。お気軽にお問い合わせください。</p>
